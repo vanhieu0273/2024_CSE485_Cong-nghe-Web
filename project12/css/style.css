@@ -1,0 +1,39 @@
+nav ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    display: flex;
+    background-color: darkblue;
+}
+
+nav ul li {
+    padding: 20px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 1px;
+    height: 80%;
+    background-color: #fff;
+    transform: translateY(-50%);
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav ul li i {
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: blue;
+}
