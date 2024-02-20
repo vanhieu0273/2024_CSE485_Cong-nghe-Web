@@ -18,7 +18,7 @@
 </h3>
 <div class="course-container">
 <?php
-
+// Dữ liệu khóa học lưu động trong mảng
 $courses = [
     [
         'title' => 'Lập trình viên viên quốc tế',
@@ -70,13 +70,23 @@ quốc tế.',
         'duration' => '2 - 2.5 năm',
         'image' => 'images/img_5.png'
     ],
+    // Thêm các khóa học khác vào đây
 ];
 
-
+// Hiển thị danh sách khóa học
+//foreach ($courses as $course) {
+//    echo '<div class="course">';
+//    echo '<h2>' . $course['title'] . '</h2>';
+//    echo '<p>' . $course['description'] . '</p>';
+//    echo '<p>Học phí: ' . $course['fee'] . '</p>';
+//    echo '<p>Khải giảng: ' . $course['start_date'] . '</p>';
+//    echo '<p>Thời lượng: ' . $course['duration'] . '</p>';
+//    echo '</div>';
+//}
 foreach ($courses as $course) {
     echo '<div class="course">';
-    
-    echo '<img src="' . $course['image'] . '" alt="' . $course['title'] . '">';
+    // Hiển thị hình ảnh
+    echo '<img src="' . $course['image'] . '" alt="' . $course['title'] . '">'; // Sử dụng trường thông tin image
     echo '<h2>' . $course['title'] . '</h2>';
     echo '<p>' . $course['description'] . '</p>';
     echo '<p><i class="fa-solid fa-gift icon" style="color: red"></i> Học phí: ' . $course['fee'] . '</p>';
