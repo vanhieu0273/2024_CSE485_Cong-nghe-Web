@@ -1,0 +1,38 @@
+/* Thêm các định kiểu CSS của bạn ở đây */
+.course {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.course h2 {
+    color: #333;
+}
+.course p {
+    color: #666;
+}
+
+/* Thêm các định kiểu CSS của bạn ở đây */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cột với chiều rộng bằng nhau */
+    gap: 20px; /* Khoảng cách giữa các khóa học */
+}
+
+.course {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.course h2 {
+    color: #333;
+}
+
+.course p {
+    color: #666;
+}
+
+/* Kích thước ảnh */
+.course img {
+    width: 100%; /* Ảnh chiếm toàn bộ chiều rộng của phần tử chứa */
+    height: auto; /* Đảm bảo tỷ lệ khung hình không bị méo */
+}
