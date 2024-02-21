@@ -2,8 +2,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Project1</title>
+    <title>Project12</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
