@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Project1</title>
-</head>
-<body>
-
 <?php
 $navItems = [
     "GIỚI THIỆU",
@@ -19,17 +10,63 @@ $navItems = [
     "SINH VIÊN",
     "LIÊN HỆ"
 ];
-
-$firstItemIcon = "fas fa-home";
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuc Hanh</title>
+    <style>
+        nav {
+            background-color: #012580; /* Màu xanh dương */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .divider {
+            height: 20px;
+            margin: 0 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            padding: 10px;
+            margin-right: 10px;
+            border-right: 1px solid #fff;
+        }
+
+        nav li:first-child {
+            border-left: 1px solid #fff; /* Thêm dấu gạch trước mục đầu tiên */
+        }
+
+        nav li:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
 
 <nav>
+    <div class="home-link">
+        <a href="path/to/home" title="Trang chủ">
+            <img src="images/house-door.svg">
+        </a>
+    </div>
+    <div class="divider"></div>
     <ul>
-        <li><i class="<?php echo $firstItemIcon; ?>"></i><a href="#"><?php echo $navItems[0]; ?></a></li>
-        <?php foreach (array_slice($navItems, 1) as $item): ?>
-            <li><a href="#"><?php echo $item; ?></a></li>
+        <?php foreach ($navItems as $item): ?>
+            <li><?php echo $item; ?></li>
         <?php endforeach; ?>
     </ul>
 </nav>
+
 </body>
 </html>
