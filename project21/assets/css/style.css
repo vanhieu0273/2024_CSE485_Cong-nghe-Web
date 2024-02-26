@@ -1,0 +1,45 @@
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background-color: #ccc;
+}
+
+.pagination .active {
+    background-color: #ccc;
+    border-color: #ccc;
+}
